@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./assets/logo-header.png" alt=" Logo-Mario-Bros" class="logo-header" />
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a onclick="mostrarForm()">Fale Conosco</a>
+    </div>
+
+    <div class="container">
+        <div class="container-text">
+            <img src="./assets/logo.png" alt="Logo-Mario-Bros" class="logo-mario" />
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas
+                Hidráulicos Com Estilo!
+            </p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento?
+                Vazamentos inesperados, canos entupidos ou problemas de drenagem podem transformar
+                seu dia em um verdadeiro caos. Mas não se preocupe, porque os encanadores mais famosos do Reino dos
+                Cogumelos
+                - Mario & Luigi estão aqui para salvar o dia!
+            </p>
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+        <div class="container-img">
+            <img src="./assets/mario.png" alt="Mario-Luigi" class="mario-luigi" />
+            <div class="mascara"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=55999999999&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20de%20encanamento."
+        target="_blank" class="link-whatsapp">
+        <img src="./assets/whatsapp.png" alt="link whatsapp" class="whatsapp" />
+    </a>
+
+    <form class="form-orcamento" action="https://formcarry.com/s/Mc4BbehrqxO" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Nome" type="text" name="Nome" />
+        <input placeholder="Telefone" type="tel" name="telefone" />
+        <textarea placeholder="Digite seu problema aqui!" name="duvidas"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-form" onclick="fecharForm()"></div>
+
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
