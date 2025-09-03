@@ -87,6 +87,7 @@ p {
     color: #ffffff;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header img {
@@ -146,13 +147,98 @@ textarea {
     transition: visibility 1s ease-in-out;
 }
 
-/*
-    Inicial
-    top: 30%;
-    left: -300px;
+@media (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+        gap: 50px;
+    }
 
-    Final
-    top:30%;
-    left:50%;
-    transform: translateX(-50%);
-*/
+    .container-text {
+        width: 100%;
+    }
+
+    .mario-luigi {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .container-text {
+        width: 100%;
+    }
+
+    .mario-luigi {
+        height: 300px;
+    }
+
+    .logo-mario {
+        height: 150px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header img {
+        height: 50px;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .container-text {
+        width: 100%;
+    }
+
+    .mario-luigi {
+        height: 200px;
+    }
+
+    .logo-mario {
+        height: 100px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 5px;
+        margin: 10px;
+    }
+
+    .header img {
+        height: 40px;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
